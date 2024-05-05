@@ -10,7 +10,6 @@ const Index = () => {
   const addWordToStory = (word) => {
     const newStory = story ? `${story} ${word}` : word;
     setStory(newStory);
-    setTimeout(() => addRandomWord(), 1000);
   };
 
   const addRandomWord = () => {
